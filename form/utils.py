@@ -134,6 +134,8 @@ class QueueService:
                     WaitTimeSeconds=wait_time_in_seconds,
                     MaxNumberOfMessages=max_number_of_messages,
                 )
+            else:
+                raise
 
         return messages
 
