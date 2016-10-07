@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 class FormData(QueueService):
     """SQS queue service for form data"""
-    queue_name = settings.SQS_INVALID_MESAGES_QUEUE_NAME
+    queue_name = settings.SQS_FORM_DATA_QUEUE_NAME
 
 
 class InvalidFormData(QueueService):
